@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>QR Code</title>
+</head>
+
+<body>
+  <div class="main_container">
+    <div class="container">
+      <!-- <div class="box_container"> -->
+      <!-- user_choice -->
+      <div class="select_choice">
+        <h1>What you want to do?</h1>
+        <div class="select_btn">
+          <input type="button" value="Gernate QR Code" id="generate" class="choice">
+          <input type="button" value="Read QR Code" id="read" class="choice">
+        </div>
+      </div>
+      <!-- </div> -->
+      <!-- generate_qr_section -->
+      <div class="generate_qr_container">
+        <h1>Generate</h1>
+        <div class="preview_img">
+          <img src="assets/images/preview.jpg" alt="" width="200px" height="200px" id="preview">
+        </div>
+        <div class="text_area">
+          <textarea name="" id="user_input" cols="50" rows="5"
+            placeholder="Enter any Text or Number to generate qr code" class="textarea"></textarea>
+        </div>
+        <div class="generate_qr_btn">
+          <input type="button" value="Generate QR Code" id="generate_qr">
+          <input type="button" value="Download QR Code" id="download_generated_qr">
+        </div>
+      </div>
+
+      <!-- read_qr_section -->
+      <div class="scan_qr_code_container">
+        <h1>Read QR Code</h1>
+        <div class="scan_preview_image">
+          <img src="assets/images/preview.jpg" width="200px " height="200px" alt="" id="result_img">
+        </div>
+        <div class="result_text_area">
+          <textarea name="" id="result_text" cols="50" rows="5" placeholder="Result" class="textarea"></textarea>
+        </div>
+        <div class="scan_btns">
+          <input value="Select QR Code" type="file" accept="image/*" id="select_image">
+          <input type="button" value="Select QR Code" id="select_image_btn">
+          <input type="button" value="Download" id="download_file">
+        </div>
+      </div>
+
+
+    </div>
+
+
+
+
+    <div class="test_connection">
+      <div class="connection_image">
+        <img src="assets/images/wifi-2.png" width="35px" height="35px" alt="" id="wifi_img">
+      </div>
+      <div class="connection_text">
+        <h2 id="wifi_text">You are Offline</h2>
+      </div>
+    </div>
+
+  </div>
+</body>
+<!-- <script src="assets/js/main.js"></script> -->
+<script src="assets/js/index.js"></script>
+
+</html>
