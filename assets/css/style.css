@@ -14,7 +14,7 @@ body{
     width: 100vw;
     height: 100vh;
 }
-.container{
+.container-center{
     background-color: white;
     min-width: 500px;
     min-height: 200px;
